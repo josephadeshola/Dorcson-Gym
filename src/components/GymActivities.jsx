@@ -47,7 +47,7 @@ const GymActivities = () => {
     },
     {
       name: "Yoga & Pilates",
-      image: "https://images.unsplash.com/photo-1506629905851-f4e3b505b5d3?w=600&h=400&fit=crop",
+      image: "https://img.freepik.com/premium-photo/black-woman-yoga-stretching-with-mat-health-wellness-pilates-floor-home-young-african-female-person-yogi-holistic-warm-up-exercise-fitness-zen-workout-house_590464-457077.jpg?uid=R159996107&ga=GA1.1.1567084357.1721659617&semt=ais_hybrid&w=740",
       description: "Find balance and flexibility with our mind-body wellness programs"
     },
     {
