@@ -41,13 +41,13 @@ const Navigation = () => {
 
           <div className="hidden md:flex items-center space-x-4">
             <Link to="/auth/login">
-              <Button variant="ghost" className="text-gray-300 hover:text-white hover:bg-gray-800">
+              <Button variant="ghost" className="text-gray-300 cursor-pointer hover:text-white hover:bg-gray-800">
                 <User className="h-4 w-4 mr-2" />
                 Login
               </Button>
             </Link>
             <Link to="/auth/register">
-              <Button className="bg-red-600 hover:bg-red-700 text-white">
+              <Button className="bg-red-600 cursor-pointer hover:bg-red-700 text-white">
                 Join Now
               </Button>
             </Link>
@@ -79,9 +79,17 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
+            <Link to="/auth/login">
+              <Button variant="ghost" className="text-gray-300 cursor-pointer hover:text-white hover:bg-gray-800">
+                <User className="h-4 w-4 mr-2" />
+                Login
+              </Button>
+            </Link>
+           <Link to="/auth/register">
             <Button className="w-full mt-4 bg-red-600 cursor-pointer hover:bg-red-700 text-white">
               Join Now
             </Button>
+            </Link>
           </div>
         </div>
       )}

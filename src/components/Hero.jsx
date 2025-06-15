@@ -16,7 +16,7 @@ const Hero = () => {
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in mt-32">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6">
             UNLEASH YOUR
             <span className="text-red-500 block">POTENTIAL</span>
           </h1>

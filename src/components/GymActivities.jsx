@@ -81,7 +81,7 @@ const GymActivities = () => {
             {activities.map((activity, index) => (
               <CarouselItem key={index} className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                 <Card className="overflow-hidden hover:shadow-xl shadow-md border-0 cursor-pointer transition-shadow duration-300">
-                  <div className="relative h-48 overflow-hidden">
+                  <div className="relative h-48 rounded-t-xl overflow-hidden">
                     <img
                       src={activity.image}
                       alt={activity.name}

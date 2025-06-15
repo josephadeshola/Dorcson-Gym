@@ -100,7 +100,7 @@ const Login = () => {
             <Button
               onClick={handleGoogleSignIn}
               variant="outline"
-              className="w-full mt-4 bg-white hover:bg-gray-100 text-black border-gray-300"
+              className="w-full mt-4 bg-white hover:bg-gray-100 cursor-pointer text-black border-gray-300"
             >
               <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24">
                 <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
@@ -115,7 +115,7 @@ const Login = () => {
           <div className="text-center mt-6">
             <p className="text-gray-400">
               Don't have an account?{" "}
-              <Link to="/auth/register" className="text-red-500 hover:text-red-400 font-medium">
+              <Link to="/auth/register" className="text-red-500 cursor-pointer hover:text-red-400 font-medium">
                 Sign up
               </Link>
             </p>
