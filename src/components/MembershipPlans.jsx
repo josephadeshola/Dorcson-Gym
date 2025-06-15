@@ -59,7 +59,7 @@ const MembershipPlans = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {plans.map((plan, index) => (
-            <Card key={index} className={`relative ${plan.popular ? 'border-red-500 shadow-lg scale-105' : 'border-gray-200'}`}>
+            <Card key={index} className={`relative cursor-pointer ${plan.popular ? 'border-red-500 shadow-lg scale-105' : 'border-gray-200'}`}>
               {plan.popular && (
                 <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-red-500 text-white">
                   Most Popular
@@ -85,7 +85,7 @@ const MembershipPlans = () => {
                 </ul>
                 
                 <Button 
-                  className={`w-full ${plan.popular ? 'bg-red-600 hover:bg-red-700' : 'bg-gray-900 hover:bg-gray-800'} text-white`}
+                  className={`w-full cursor-pointer  ${plan.popular ? 'bg-red-600 hover:bg-red-700' : 'bg-gray-900 hover:bg-gray-800'} text-white`}
                 >
                   Choose Plan
                 </Button>

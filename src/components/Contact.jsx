@@ -18,22 +18,22 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
-            <Card>
+            <Card className="border-0">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold text-gray-900">
                   Send us a Message
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <form className="space-y-4">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <form className="space-y-4 border-0">
+                  <div className="grid grid-cols-1  md:grid-cols-2 gap-4">
                     <Input placeholder="First Name" />
                     <Input placeholder="Last Name" />
                   </div>
                   <Input type="email" placeholder="Email Address" />
                   <Input type="tel" placeholder="Phone Number" />
                   <Textarea placeholder="Message" rows={4} />
-                  <Button className="w-full bg-red-600 hover:bg-red-700 text-white">
+                  <Button className="w-full bg-red-600 cursor-pointer hover:bg-red-700 text-white">
                     Send Message
                   </Button>
                 </form>
@@ -42,7 +42,7 @@ const Contact = () => {
           </div>
 
           <div className="space-y-8">
-            <Card>
+            <Card className="border-0">
               <CardHeader>
                 <CardTitle className="text-xl font-bold text-gray-900">
                   Visit Our Gym
@@ -66,7 +66,7 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="border-0"> 
               <CardHeader>
                 <CardTitle className="text-xl font-bold text-gray-900">
                   Operating Hours

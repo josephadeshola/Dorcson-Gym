@@ -1,5 +1,6 @@
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
+import GymActivities from "./GymActivities";
 
 const Trainers = () => {
   const trainers = [
@@ -51,7 +52,7 @@ const Trainers = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {trainers.map((trainer, index) => (
-            <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
+            <Card key={index} className="hover:shadow-lg border-0 cursor-pointer transition-shadow duration-300">
               <CardContent className="p-6">
                 <div className="text-center">
                   <div className="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
@@ -79,6 +80,7 @@ const Trainers = () => {
           ))}
         </div>
       </div>
+    <GymActivities/>
     </section>
   );
 };

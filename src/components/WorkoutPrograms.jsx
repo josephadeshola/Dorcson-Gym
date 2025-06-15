@@ -55,7 +55,7 @@ const WorkoutPrograms = () => {
           {programs.map((program, index) => {
             const IconComponent = program.icon;
             return (
-              <Card key={index} className="hover:shadow-lg transition-shadow duration-300 border-gray-200">
+              <Card key={index} className="hover:shadow-lg cursor-pointer transition-shadow duration-300 border-gray-200">
                 <CardHeader>
                   <div className="flex items-center justify-between mb-4">
                     <IconComponent className="h-12 w-12 text-red-500" />

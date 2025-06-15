@@ -45,7 +45,7 @@ const Equipment = () => {
           {equipmentCategories.map((category, index) => {
             const IconComponent = category.icon;
             return (
-              <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
+              <Card key={index} className="hover:shadow-lg border-0 cursor-pointer transition-shadow duration-300">
                 <CardHeader>
                   <div className="flex items-center space-x-3">
                     <IconComponent className="h-8 w-8 text-red-500" />
