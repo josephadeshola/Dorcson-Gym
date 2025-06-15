@@ -1,9 +1,16 @@
 // import { Button } from "@/components/ui/button";
 import { Dumbbell, Timer, Heart } from "lucide-react";
 import { Button } from "./ui/button";
+import MembershipPlans from "./MembershipPlans";
+import WorkoutPrograms from "./WorkoutPrograms";
+import Trainers from "./Trainers";
+import Equipment from "./Equipment";
+import Contact from "./Contact";
+import Footer from "./Footer";
 
 const Hero = () => {
   return (
+    <>
     <section id="home" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-red-900">
       <div className="absolute inset-0 bg-black/40" />
       
@@ -50,6 +57,13 @@ const Hero = () => {
         </div>
       </div>
     </section>
+         <MembershipPlans/>
+         <WorkoutPrograms/>
+         <Trainers/>
+         <Equipment/>
+         <Contact/>
+         <Footer/>
+    </>
   );
 };
 

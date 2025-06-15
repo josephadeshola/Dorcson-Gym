@@ -1,17 +1,18 @@
 import { useState } from "react";
-import { Menu, X, Activity } from "lucide-react";
+import { Menu, X, Activity,  User  } from "lucide-react";
 import { Button } from "./ui/button";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { name: "Home", href: "#home" },
-    { name: "Membership", href: "#membership" },
-    { name: "Programs", href: "#programs" },
-    { name: "Trainers", href: "#trainers" },
-    { name: "Equipment", href: "#equipment" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/" },
+    { name: "Membership", href: "/membership" },
+    { name: "Programs", href: "/programs" },
+    { name: "Trainers", href: "/trainers" },
+    { name: "Equipment", href: "/equipment" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -38,10 +39,18 @@ const Navigation = () => {
             </div>
           </div>
 
-          <div className="hidden md:block">
-            <Button className="bg-red-600 hover:bg-red-700 cursor-pointer text-white">
-              Join Now
-            </Button>
+          <div className="hidden md:flex items-center space-x-4">
+            <Link to="/auth/login">
+              <Button variant="ghost" className="text-gray-300 hover:text-white hover:bg-gray-800">
+                <User className="h-4 w-4 mr-2" />
+                Login
+              </Button>
+            </Link>
+            <Link to="/auth/register">
+              <Button className="bg-red-600 hover:bg-red-700 text-white">
+                Join Now
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
