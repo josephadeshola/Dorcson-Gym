@@ -39,7 +39,12 @@ const Navigation = () => {
             </div>
           </div>
 
-          <div className="hidden md:flex items-center space-x-4">
+           <div className="hidden md:flex items-center space-x-4">
+            <Link to="/dashboard">
+              <Button variant="ghost" className="text-gray-300 hover:text-white hover:bg-gray-800">
+                Dashboard
+              </Button>
+            </Link>
             <Link to="/auth/login">
               <Button variant="ghost" className="text-gray-300 cursor-pointer hover:text-white hover:bg-gray-800">
                 <User className="h-4 w-4 mr-2" />

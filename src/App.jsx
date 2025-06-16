@@ -10,6 +10,7 @@ import Footer from './components/Footer'
 import { Route, Routes } from 'react-router-dom'
 import Login from './pages/Login'
 import Signup from './pages/SignUp'
+import Dashboard from './pages/Dashboard'
 function App() {
 
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/trainers" element={<Trainers/>}/>
         <Route path="/equipment" element={<Equipment/>}/>
         <Route path="/contact" element={<Contact/>}/>
+        <Route path="/dashboard" element={<Dashboard/>}/>
         <Route path="/auth/register" element={<Signup/>}/>
         <Route path="/auth/login" element={<Login/>}/>
      </Routes>
