@@ -37,7 +37,7 @@ const Login = () => {
 
       <div className="max-w-md w-full space-y-8 mb-10 relative z-10">
         <div className="text-center transform hover:scale-105 transition-transform duration-300">
-          <div className="flex items-center mt-32 justify-center space-x-2 mb-6 group">
+          <div className="flex items-center mt-20 justify-center space-x-2 mb-6 group">
             <div className="relative">
               <Activity className="h-12 w-12 text-red-500 group-hover:text-red-400 transition-colors duration-300" />
               <div className="absolute inset-0 bg-red-500/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300"></div>

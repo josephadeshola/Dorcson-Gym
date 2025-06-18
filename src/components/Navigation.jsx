@@ -16,35 +16,35 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 w-full bg-black/90 backdrop-blur-md z-50 border-b border-red-500/20">
+    <nav className="fixed top-0 w-full bg-black/90 backdrop-blur-md z-50 border-b border-orange-500/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex items-center space-x-2">
+          <Link to="/"  className="flex items-center space-x-2">
             <Activity className="h-8 w-8 text-red-500" />
             <span className="text-xl font-bold text-white">DorcsonGym</span>
-          </div>
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {menuItems.map((item) => (
-                <a
+                <Link
                   key={item.name}
-                  href={item.href}
+                  to={item.href}
                   className="text-gray-300 hover:text-red-500 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
+               <Link to="/dashboard">
+                <Button variant="ghost" className="text-gray-300 cursor-pointer">
+                Dashboard
+              </Button>
+            </Link>
             </div>
           </div>
 
            <div className="hidden md:flex items-center space-x-4">
-            <Link to="/dashboard">
-              <Button variant="ghost" className="text-gray-300 hover:text-white hover:bg-gray-800">
-                Dashboard
-              </Button>
-            </Link>
             <Link to="/auth/login">
               <Button variant="ghost" className="text-gray-300 cursor-pointer hover:text-white hover:bg-gray-800">
                 <User className="h-4 w-4 mr-2" />

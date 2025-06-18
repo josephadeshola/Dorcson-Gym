@@ -26,13 +26,13 @@ const Contact = () => {
               </CardHeader>
               <CardContent>
                 <form className="space-y-4 border-0">
-                  <div className="grid grid-cols-1  md:grid-cols-2 gap-4">
-                    <Input placeholder="First Name" />
-                    <Input placeholder="Last Name" />
+                  <div className="grid grid-cols-1 border-0  md:grid-cols-2 gap-4">
+                    <Input className="border-0 bg-slate-100 shadow" placeholder="First Name" />
+                    <Input className="border-0 bg-slate-100 shadow" placeholder="Last Name" />
                   </div>
-                  <Input type="email" placeholder="Email Address" />
-                  <Input type="tel" placeholder="Phone Number" />
-                  <Textarea placeholder="Message" rows={4} />
+                  <Input className="border-0 bg-slate-100 shadow" type="email" placeholder="Email Address" />
+                  <Input className="border-0 bg-slate-100 shadow" type="tel" placeholder="Phone Number" />
+                  <Textarea className="border-0 bg-slate-100 shadow" placeholder="Message" rows={4} />
                   <Button className="w-full bg-red-600 cursor-pointer hover:bg-red-700 text-white">
                     Send Message
                   </Button>

@@ -80,8 +80,8 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
             <ul className="space-y-2 text-gray-400">
               <li>123 Fitness Street</li>
-              <li>Downtown, NY 10001</li>
-              <li>(555) 123-4567</li>
+              <li>Ilorin kwara state, Airport</li>
+              <li>(+234) 9039-732-028</li>
               <li>info@Dorcsongym.com</li>
             </ul>
           </div>

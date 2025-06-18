@@ -7,7 +7,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "./ui/carousel";
-// import { CarouselApi } from "";
 
 const GymActivities = () => {
   const [api, setApi] = useState(null);
